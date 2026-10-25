@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,30 @@
     <link rel="stylesheet" href="/src/output.css">
     <title>Document</title>
 </head>
+
 <body class="flex flex-col min-h-[100dvh]">
-    
+
     <header class="bg-gradient-to-r from-black to-blue-500 text-white p-4">
 
-        <a href="#" class="hover:bg-gray-700 px-3 py-2
-        rounded flex items-center peer"><span>خدمات </span>
-        </a>
+        <a  href="#" class="hover:bg-gray-700 cursor-pointer relative px-3 py-2
+        rounded  flex items-center peer "><span>خدمات </span>
+
+            <ul class="absolute z-10 transition-all duration-1000 w-32  text-black
+                       overflow-hidden rounded-lg h-0 peer-focus:h-100 ">
+                <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold">طراحی وب</a></li>
+                <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold"> سئو</a></li>
+                <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold">برندینگ </a></li>
+            </ul>
+        </a >
+
+
 
         <!-- تگ دراپ دون -->
-         <ul class="absolute z-10 transition-all duration-1000 w-32  text-black
-         overflow-hidden rounded-lg h-0 peer-focus:h-100">
-            <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold" >طراحی وب</a></li>
-            <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold"> سئو</a></li>
-            <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold">برندینگ </a></li>
-         </ul>
+
     </header>
     <main class="bg-[url(/src/assests/images/0000b8.jpg)] bg-cover 
     bg-blend-overlay bg-white/40 bg-center p-4 grow"></main>
     <footer class="bg-gradient-to-r from-black to-blue-500 p-4 text-white"></footer>
 </body>
+
 </html>
