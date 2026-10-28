@@ -12,23 +12,23 @@
 <body dir="rtl" class="flex flex-col min-h-[100dvh] ">
 
     <header class=" bg-gradient-to-r from-black to-blue-500 text-white p-4
-    flex justify-between md:justify-center items-center md:gap-10  ">
+    flex  justify-between md:justify-center items-center md:gap-10  ">
 
         <!-- logo -->
-        <div class=" logo ">
-            <img src="" class=" h-12 " alt="logo">
+        <div class="logo ">
+            <img src="" class=" h-12" alt="logo">
 
         </div>
 
-  <!-- منو ناوبری -->
+        <!-- منو ناوبری -->
         <nav class="navbar hidden md:inline-block ">
 
             <ul class="flex space-x-6 items-center">
                 <li><a href="#" class=" hover:bg-gray-700 px-3 py-2  rounded">خانه</a></li>
                 <li><a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">درباره ما</a></li>
                 <li>
-                     <a href="#" class="hover:bg-gray-700 cursor-pointer relative px-3 py-2
-        rounded  flex items-center peer "><span>خدمات </span>
+                    <a href="#" class="hover:bg-gray-700 cursor-pointer relative px-3 py-2
+                                  rounded  flex items-center peer "><span>خدمات </span>
 
                         <ul class="absolute z-10 transition-all duration-1000 w-32  text-black
                        overflow-hidden rounded-lg h-0 peer-focus:h-100 ">
@@ -39,10 +39,56 @@
                             <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold">برندینگ </a>
                             </li>
                         </ul>
-                    </a></li>
+                    </a>
+                </li>
                 <li><a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">تماس با ما</a></li>
             </ul>
         </nav>
+
+        <!-- منو سایدبار -->
+
+        <aside class=" md:hidden w-8 absolute">
+
+            <label for="checkbox">
+                <img tabindex="0" class="w-full" src="" alt="">
+            </label>
+            <input class="  relative peer cursor-pointer top-2 right-2 " id="checkbox"  type="checkbox" >
+
+
+            <nav class=" w-0 z-10 peer-checked:w-8/12 overflow-hidden
+            transition-all duration-1000  fixed top-0 right-0 bg-gray-600/80 h-[100dvh] md:hidden ">
+
+                <ul class="flex bg-gray-900 flex-col pt-6 w-72 h-full space-x-6 items-center">
+                    <li class=" w-full text-center !m-0 ">
+                        <a href="#" class="transition-all duration-1000 hover:bg-gray-700 block px-3 w-full py-2 rounded">خانه</a>
+                    </li>
+                    <li  class="w-full text-center !m-0"> 
+                        <a href="#" class="hover:bg-gray-700 px-3 py-2 rounded">درباره ما</a></li>
+                    <li  class=" text-center !m-0 ">
+                        <a href="#" class="hover:bg-gray-700 cursor-pointer relative px-3 py-2 
+                             rounded  flex items-center peer "><span>خدمات </span>
+
+                            <ul class="absolute z-10 transition-all duration-1000 w-32  text-white text-center
+                       overflow-hidden rounded-lg h-0 peer-focus:h-100 ">
+                                <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold">طراحی
+                                        وب</a>
+                                </li>
+                                <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold"> سئو</a>
+                                </li>
+                                <li><a href="#" class="hover:bg-gray-600 block px-4 py-2 text-center font-bold">برندینگ
+                                    </a>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li  class="w-full text-center !m-0">
+                        <a href="#" class="hover:bg-gray-700 block transition-all duration-1000 px-3 py-2 rounded">تماس با ما</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+
+
 
 
 
@@ -51,7 +97,16 @@
 
 
     <main class="bg-[url(/src/assests/images/0000b8.jpg)] bg-cover 
-    bg-blend-overlay bg-white/40 bg-center p-4 grow"></main>
+    bg-blend-overlay bg-white/40 bg-center p-4 grow">
+
+        <h2 class=" text-center p-2 mx-auto text-blue-700 ">گالری تصاویر</h2>
+        <section class="  bg-amber-400  mx-auto p-4 flex m-w-[90%]  xl:max-w-11/12 ">
+
+        </section>
+
+    </main>
+
+
     <footer class="bg-gradient-to-r from-black to-blue-500 p-4 text-white"></footer>
 </body>
 
